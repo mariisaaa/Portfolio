@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marisa.com</title>
+<link href="projects.css" rel="stylesheet" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+
+      <body>
+        <div class="topbar">
+          <span class="dot"></span>
+          <span class="dot1"></span>
+          <span class="dot2"></span>
+          <div class="square" style="background-color: white;">
+            <button onclick="myFunction()" class="dropbtn">click to explore
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="aboutme.html">About me</a>
+              <a href="index.html">Home</a>
+              <a href="projects.html">Projects</a>
+              <a href="https://marisar12.github.io/Sophomore_Portfolio/" target="_blank">Sophomore Portfolio</a>
+              <a href="https://marisar12.github.io/junioryearport/" target="_blank">Junior Portfolio</a>
+</div>
+          </div>
+        </div>
+
+<div class="tab">
+<button class="tablinks" onclick="openCity(event,'Personal')">
+  Personal
+</button>
+  <button class="tablinks" onclick="openCity(event,'senior-year')">
+Senior Year
+  </button>
+  <button class="tablinks" onclick="openCity(event,'junior-year')">Junior Year 
+  </button> 
+</div>
+<div id="Personal" class="tabcontent">
+     <p>Coming soon!</p>
+</div>
+        <div id="senior-year" class="tabcontent">
+          <div class="project-container">
+            <div class="project-icons">
+              <img src="novalogo.png" alt="nova logo">
+              <div class="overlay">
+                <h4 style="font-family: Kameron, serif;"><a href="https://marisar12.github.io/congressional_app_website/" target="_blank">The congressional App Challenge</a></h4>
+                <p style="font-family: Zain, sans-serif;font-size: 1.8vh;">For this project me and my group created an app based on the topic education. Nova is an app for high school students that are struggling in school. Nova offers straight forwards notes, practice problems, videos, and games so that everyone can learn when using Nova no matter there learning style. Click the title above to go to Novas Website</p>
+              </div>
+            </div>
+          <div class="project-icons">
+          <img src="logo(1).png" alt="Loved pets logo">
+          <div class="overlay">
+            <h4 style="font-family: Kameron, serif;"><a href="https://marisar12.github.io/Lovedpetswebsite/" target="_blank">Loved Pets</a></h4>
+            <p style="font-family: Zain, sans-serif;font-size: 1.8vh;">Loved Pets was a fake animal shelter that we had to create a website for as our client. Through this project I was able to work on my html and css skills by creating the website from scratch. Click the title above to go to Loved Pets Website</p>
+          </div>
+          </div>
+          <div class="project-icons">
+          <img src="my_little_pony.png" alt="my_little_pony">
+          <div class="overlay">
+          <h4 style="font-family: Kameron, serif;"><a href="https://codepen.io/marisa112/full/wBWodVw" target="_blank">My Little Pony character quiz</a></h4>
+          <p style="font-family: Zain, sans-serif;font-size: 1.8vh;">This is my first project using JQuery. In this project we had to create 2 questions and when the button is clicked there output is displayed. Click the title above to go to the My Little Pony quiz</p>
+          </div>
+          </div>
+          </div>
+
+        </div>
+        <div id="junior-year" class="tabcontent">
+          <div class="project-container">
+            <div class="project-icons">
+              <img src="MentalSpark.png" alt="MentalSpark">
+              <div class="overlay">
+                <h4 style="font-family: Kameron, serif;"><a href="https://marisar12.github.io/MentalSpark/" target="_blank">MentalSpark</a></h4>
+                <p style="font-family: Zain, sans-serif;font-size: 1.8vh;">MentalSpark is an app that is there to support those that ae struggling with their mental health. This app was for the InfyApp competition, my group and I worked from February to May with two mentors in order to create our app. We used Figma to create our app and HTML/CSS to create the website. Click the title above to go to MentalSparks Website</p>
+              </div>
+            </div>
+          <div class="project-icons">
+          <img src="Rations.png" alt="Rations">
+          <div class="overlay">
+            <h4 style="font-family: Kameron, serif;"><a href="https://marisar12.github.io/G4C--25/" target="_blank">Rations</a></h4>
+            <p style="font-family: Zain, sans-serif;font-size: 1.8vh;">Rations is a game taking place during an apocalypse. The user has to do tasks in order to obtain resources for their group. At the end of every week in game the user has to divide the reosuces within the group trying to meet everyone needs while also keeping peace. This game was created for the G4C compeition and I was a finalist.  Click the title above to go to Rations Website</p>
+          </div>
+          </div>
+          </div>
+        </div>
+        
+        
+
+
+
+
+
+      
+        
+          <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+
+            function openCity(evt, cityName) {
+              // Declare all variables
+              var i, tabcontent, tablinks;
+
+              // Get all elements with class="tabcontent" and hide them
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+
+              // Get all elements with class="tablinks" and remove the class "active"
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+
+              // Show the current tab, and add an "active" class to the button that opened the tab
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+          </script>
+        
+          </body>
+
+          </html>
